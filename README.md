@@ -6,19 +6,31 @@ This repository contains the code for the paper
 Accepted by ICCV 2023
 
 <div align="center">
-  <img src="figures/motivation.png" width="400px" />
+  <img src="figures/motivation.png" width="500px" />
 </div>
 
+## Installation
+Clone this repository:
+```
+git clone git@github.com:miaoyuchun/DDS2M.git
+```
 
+The project was developed using Python 3.7.10, and torch 1.12.1.
+You can build the environment via pip as follow:
 
+```
+pip3 install -r requirements.txt
+```
 
+## Running Experiments
+We provide code to reproduce the main results on HSI completion, HSI denoising, and HSI super-resolution as follows:
+```
+python main_completion.py
+python main_denoising.py
+python main_sisr.py
+```
 
-
-
-
-
-
-## Citation
+## Citation and Acknowledgement
 If you find our work useful in your research, please cite:
 
 ```
@@ -30,9 +42,7 @@ If you find our work useful in your research, please cite:
 }
 ```
 
-## License
-
-This project is released under [MIT License](LICENSE).
+the code is highly based on the repository of [DS2DP](https://github.com/miaoyuchun/DS2DP), [DDRM](https://github.com/bahjat-kawar/ddrm), and [DDPM](https://github.com/lucidrains/denoising-diffusion-pytorch).
 
 
 [1]: https://arxiv.org/abs/1701.06487
