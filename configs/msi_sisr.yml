@@ -1,0 +1,45 @@
+data:
+    dataset: "msi"
+    training_dataset: "CelebA_HQ"
+    root:  "./exp/datasets/ood_msi"
+    filename: "Omsi_1.mat"
+    category: ""
+    image_size: 256 
+    channels: 32
+    logit_transform: false
+    uniform_dequantization: false
+    gaussian_dequantization: false
+    random_flip: true
+    rescaled: true
+    num_workers: 1
+    out_of_dist: True
+
+model:
+    type: "dip"
+    iter_number: 0
+    iter_number_tail: 0
+    use_dip: True
+    reinit: false
+    lr: 0.0005
+    point: 0
+    in_channels: 3
+    out_ch: 3
+    ch: 128
+    ch_mult: [ 1, 1, 2, 2, 4, 4 ]
+    num_res_blocks: 2
+    attn_resolutions: [ 16, ]
+    dropout: 0.0
+    var_type: fixedsmall 
+    ema_rate: 0.999
+    ema: True
+    resamp_with_conv: True
+
+diffusion:
+    beta_schedule: linear 
+    beta_start: 0.0001
+    beta_end: 0.005
+    num_diffusion_timesteps: 1000
+
+sampling:
+    batch_size: 1
+    last_only: True
