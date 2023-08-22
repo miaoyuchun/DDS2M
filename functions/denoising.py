@@ -5,7 +5,7 @@ import os
 import numpy as np
 import scipy.io as scio
 from runners.com_psnr import quality
-from datasets import get_dataset, data_transform, inverse_data_transform
+from utils.data_utils import inverse_data_transform
 
 def compute_alpha(beta, t):
     beta = torch.cat([torch.zeros(1).to(beta.device), beta], dim=0)

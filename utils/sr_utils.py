@@ -16,21 +16,6 @@ def put_in_center(img_np, target_size):
 
 
 
-def get_baselines(img_LR_pil, img_HR_pil):
-    '''Gets `bicubic`, sharpened bicubic and `nearest` baselines.'''
-    img_bicubic_pil = img_LR_pil.resize(img_HR_pil.size, Image.BICUBIC)
-    img_bicubic_np = pil_to_np(img_bicubic_pil)
-
-    img_nearest_pil = img_LR_pil.resize(img_HR_pil.size, Image.NEAREST)
-    img_nearest_np = pil_to_np(img_nearest_pil)
-
-    img_bic_sharp_pil = img_bicubic_pil.filter(PIL.ImageFilter.UnsharpMask())
-    img_bic_sharp_np = pil_to_np(img_bic_sharp_pil)
-
-    return img_bicubic_np, img_bic_sharp_np, img_nearest_np
-
-
-
 def tv_loss(x, beta = 0.5):
     '''Calculates TV loss for an image `x`.
         

@@ -1,6 +1,5 @@
 import argparse
 import traceback
-import shutil
 import logging
 import yaml
 import sys
@@ -8,7 +7,6 @@ import os
 import torch
 from utils import utils_logger
 import numpy as np
-import torch.utils.tensorboard as tb
 import os
 torch.backends.cudnn.enabled = True
 torch.backends.cudnn.benchmark = True

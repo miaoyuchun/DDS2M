@@ -3,7 +3,6 @@ import glob
 import torch
 import torchvision
 import numpy as np
-from PIL import Image
 # import skvideo.io
 
 
@@ -54,13 +53,6 @@ def get_noisy_image(img_np, sigma, percetage):
         else:
             img_noisy_np[randX, randY, randZ] = 1
     return img_noisy_np
-
-
-def load_image(file_name):
-    mat = scipy.io.loadmat(file_name)
-    img_np = mat["image"]
-    img_np = img_np.transpose(2, 0, 1)
-    return img_np
 
 
 

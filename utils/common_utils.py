@@ -1,11 +1,7 @@
 import torch
 import torch.nn as nn
-import torchvision
-import sys
 
 import numpy as np
-from PIL import Image
-import PIL
 import numpy as np
 
 def crop_image(img, d=32):
