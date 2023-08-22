@@ -5,7 +5,9 @@ This repository contains the code for the paper
 [Yuchun Miao][myc], [Lefei Zhang][zlf], [Liangpei Zhang][zlp], [Dacheng Tao][tdc]   
 Accepted by ICCV 2023
 
-
+<div align="center">
+  <img src="figures/motivation.png" width="400px" />
+</div>
 
 
 
