@@ -46,7 +46,7 @@ If you find our work useful in your research, please cite:
 The code is highly based on the repository of [DS2DP](https://github.com/miaoyuchun/DS2DP), [DDRM](https://github.com/bahjat-kawar/ddrm), and [DDPM](https://github.com/lucidrains/denoising-diffusion-pytorch).
 
 
-[1]: https://arxiv.org/abs/1701.06487
+[1]: https://arxiv.org/abs/2303.06682
 [myc]: https://scholar.google.com/citations?user=-ec3mwUAAAAJ&hl=en
 [zlf]: https://scholar.google.com/citations?user=BLKHwNwAAAAJ&hl=en
 [zlp]: https://scholar.google.com/citations?user=vzj2hcYAAAAJ&hl=en
