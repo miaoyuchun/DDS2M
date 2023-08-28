@@ -1,9 +1,8 @@
 # DDS2M: Self-Supervised Denoising Diffusion Spatio-Spectral Model for Hyperspectral Image Restoration
 This repository contains the code for the paper 
 
-**[DDS2M: Self-Supervised Denoising Diffusion Spatio-Spectral Model for Hyperspectral Image Restoration][1]**  
+**[[ICCV 2023] DDS2M: Self-Supervised Denoising Diffusion Spatio-Spectral Model for Hyperspectral Image Restoration][1]**  
 [Yuchun Miao][myc], [Lefei Zhang][zlf], [Liangpei Zhang][zlp], [Dacheng Tao][tdc]   
-Accepted by ICCV 2023
 
 <div align="center">
   <img src="figures/motivation.png" width="500px" />
